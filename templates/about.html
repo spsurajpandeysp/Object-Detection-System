@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<about class="aboutUs-page">
+    <header class="aboutUs-header">
+        <h1 class="aboutUs-heading-h1">About Us</h1>
+    </header>
+    <section class="aboutUs-section">
+        {% for data in aboutUsData %}
+        <h2 class="aboutUs-heading-h2">{{data.title}}</h2>
+        <p class="about-para">{{data.paragraph}} {% if data.title == 'Contact Us' %} <a class="aboutUs-link" href="{% url 'contactUs' %}">Contact
+            Page</a> {% endif %}.</p>
+        {% endfor %}
+
+        <!-- <h2 class="aboutUs-heading-h2">Our Story</h2>
+        <p class="aboutUs-para">Welcome to Our Project, where innovation meets excellence, we embarked on a transformative journey to apply cutting-edge object detection techniques in the real world. Fueled by passion, our commitment is to deliver high-quality solutions that redefine industry standards..</p>
+
+        <h2 class="aboutUs-heading-h2">Our Mission</h2>
+        <p class="aboutUs-para">At our project, our mission is to make the real use of object detection , striving people with unparallel benefits and innovative solutions.</p>
+
+        <h2 class="aboutUs-heading-h2">Our Team</h2>
+        <p class="aboutUs-para">Meet the heart of our project – a dynamic and dedicated team of professionals. Committed to our core values, our team works tirelessly. Each member brings unique expertise and passion, contributing to the success and growth of Our Company.</p>
+
+        <h2 class="aboutUs-heading-h2">Contact Us</h2>
+        <p class="aboutUs-para"><a class="aboutUs-link" href="{% url 'contactUs' %}">Contact
+                Page</a>.</p> -->
+    </section>
+</about>
+{% endblock %}

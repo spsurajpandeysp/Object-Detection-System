@@ -1,0 +1,12 @@
+.home-page{
+    background-image: url(/static/media/homePage-image.jpeg);
+    border-image-width: auto;
+    height: 700px;
+    width: 100%;
+    color:blue;
+    font-size:4rem;
+    background-size: cover;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}

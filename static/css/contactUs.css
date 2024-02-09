@@ -1,0 +1,83 @@
+.contactUs-page{
+    font-family: 'Arial', sans-serif;
+    background-image: url("/static/media/contactU-background.jpg");
+    height: 100%;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.contactUs-header{
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.contactUs-container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contactUs-h2{
+    color: #3498db;
+}
+.aboutUs-link{
+    color: skyblue;
+}
+.contactUs-form{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contactUs-label{
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contactUs-input, .contactUs-textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.contactUs-button{
+    background-color: #3498db;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contactUs-button:hover{
+    background-color: #2980b9;
+}
+
+.contactUs-input:focus, .contactUs-textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    border-radius: 8px;
+}

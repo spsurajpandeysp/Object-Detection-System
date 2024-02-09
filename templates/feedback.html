@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="feedback_page">
+    <header class="feedback-header">
+        <h1 class="feedback-h1">Obecject Detection System</h1>
+        <p class="feedback-para">We value your feedback!</p>
+    </header>
+    <div class="feedback-content">
+        <div class="feedback-background-image"></div>
+        <section class="feedback-section">
+            <h2 class="feedback-h2">Leave Your Feedback</h2>
+            <form method="POST" action="{% url 'feedback' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form}}
+                <label class="feedback-label" for="firstName">First Name:</label>
+                <input class="feedback-input" type="text" id="firstName" name="firstName" required>
+
+                <label class="feedback-label" for="lastName">Last Name:</label>
+                <input class="feedback-input" type="text" id="lastName" name="lastName" required>
+    
+                <label class="feedback-label" for="email">Email:</label>
+                <input class="feedback-input" type="email" id="email" name="email" required>
+    
+                <label class="feedback-label" for="gender">Gender:</label>
+                <br>
+                <input class="feedback-radio" type="radio" name="gender" value="male" required> Male
+                <input class="feedback-radio" type="radio" name="gender" value="female" required> Female
+                <input class="feedback-radio" type="radio" name="gender" value="other" required> Other
+                <br>
+                <label class="feedback-label" for="rating">Rating:</label>
+                <input class="feedback-input" type="number" id="rating" name="rating" min="1" max="5" required>
+    
+                <label class="feedback-label" for="feedback">Your Feedback:</label>
+                <textarea class="feedback-textarea" id="feedback" name="message" rows="5" required></textarea>
+    
+                <button class="feedback-button" type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </div>
+    
+</div>
+
+{% endblock %}

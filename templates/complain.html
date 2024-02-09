@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="complain_container">
+    <div class="complain_page" action="{% url 'complain' %}" method="POST">
+        <h2 class="complain-h2">Complain Form</h2>
+        <form class="complain-form" action="{% url 'complain' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+            <label  class="complain-label" for="fname">First Name:</label>
+            <input class="complain-input" type="text" id="fname" name="fname" required>
+    
+            <label  class="complain-label" for="lname">Last Name:</label>
+            <input class="complain-input" type="text" id="lname" name="lname" required>
+    
+            <label class="complain-label"  for="email">Email Id:</label>
+            <input class="complain-input" type="email" id="email" name="email" required>
+    
+            <label class="complain-label"  for="image">Upload Img:</label>
+            <input class="complain-input" type="file" id="file" name="image" required>
+    
+            <label  class="complain-label" for="complain">Write Complain:</label>
+            <textarea class="complain-textarea" id="complain" name="complain" required></textarea>
+    
+            <button class="complain-button" type="submit">Submit Complain</button>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+

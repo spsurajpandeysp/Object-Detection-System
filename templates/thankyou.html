@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block contents %}
+<thankyou class="thankyou-page">
+    <div class="thankyou-container">
+        <img src="/static/media/tick-icon.png" class="thankyou-img">
+        <h2 class="thankyou-h2">Thank You!</h2>
+        <p class="thakyou-para">Thank you for Submitting your Details. Your  submission has been received</p>
+        <br>
+        {% if url == 'contactUs' %}
+        <a  href="{% url 'contactUs' %}" class="thankyou-btn">Oky! </a>
+        {% endif %}
+        {% if url == 'feedback' %}
+        <a  href="{% url 'feedback' %}" class="thankyou-btn">Oky! </a>
+        {% endif %}
+        {% if url == 'complain' %}
+        <a  href="{% url 'complain' %}" class="thankyou-btn">Oky! </a>
+        {% endif %}
+        
+    </div>
+</thankyou>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<services class="services-page">
+    <div class="services-section">
+        {% for data in servicesData %}
+        <div class="services-box">
+            <h3 class="services-h3"> {{data.title}} </h3>
+            <img src="/media/{{data.file}}" class="services-img">
+            <p class="services_para"> {{data.paragraph}} </p>
+            <button class="service-button">{% if data.title == 'Object Detection' %}<a class="services-link" href="{% url 'objectDetection' %}" >Click Here</a>{% endif %} {% if data.title == 'People Counter' %}<a class="services-link" href="{% url 'peopleCounter' %}" >Click Here</a>{% endif %} {% if data.title == 'Car Counter' %}<a class="services-link" href="{% url 'carCounter' %}">Click Here</a>{% endif %}</button>
+        </div>
+        {% endfor %}
+    </div>
+</services>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="contactUs-page" >
+    <header class="contactUs-header">
+        <h1 class="contactUs-h1">Contact Us</h1>
+        <p class="contactUs-p">Get in touch with us!</p>
+    </header>
+    <div class="contactUs-container">
+        <form class="contactUs-form" action="{% url 'contactUs' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form}}
+            <h2 class="contactUs-h2" >Contact Form</h2>
+            <label class="contactUs-label" for="name">Your Name:</label>
+            <input class="contactUs-input" type="text" id="name" name="name" required>
+            <label class="contactUs-label" for="email">Your Email:</label>
+            <input class="contactUs-input" type="email" id="email" name="email" required>
+    
+            <label class="contactUs-label" for="message">Your Message:</label>
+            <textarea class="contactUs-textarea" name="message" rows="4" required></textarea>
+    
+            <button class="contactUs-button" type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+{% endblock %}
