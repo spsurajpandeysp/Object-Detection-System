@@ -6,13 +6,13 @@ A dynamic website with real-time object detection using **YOLO (You Only Look On
 
 ## Interface
 
-| Login Panel | Admin Panel | Add Employee Panel | Delete Employee Panel |
+| Home Page | Services Page | Object Detection Page | People Counter Page |
 |-------------|-------------|---------------------|-----------------------|
-| ![Login Panel](./src/readmemedia/loginimage.png) | ![Admin Panel](./src/readmemedia/adminimage.png) | ![Add Employee Panel](./src/readmemedia/addemployeeimage.png) | ![Delete Employee Panel](./src/readmemedia/deleteemployeeimage.png) |
+| ![Home Page](./readmemedia/homeimage.png) | ![Services Page](./readmemedia/servicesimage.png) | ![Object Detection Page](./readmemedia/objectdetectionimage.png) | ![People Counter Page](./readmemedia/peoplecounterimage.png) |
 
-| Add Product Panel |  Modify Product Panel | Delete Product Panel | Statistics Panel of Admin |
+| Car Counter Page |  About page | Complain Page | Contact Us Page |
 |-------------------|------------------------------|----------------------|---------------------------|
-| ![Add Product Panel](./src/readmemedia/productaddimage.png) | ![Modify Product Panel](./src/readmemedia/productmodifyimage.png) | ![Delete Product Panel](./src/readmemedia/deleteproductimage.png) | ![Statistics Panel of Admin](./src/readmemedia/stat.image.png) |
+| ![Car Counter Page](./readmemedia/carcounterimage.png) | ![About Page](./readmemedia/aboutimage.png) | ![Complain Page](./readmemedia/complainimage.png) | ![Contact Us Page](./readmemedia/contactimage.png) |
 
 
 ## Features
