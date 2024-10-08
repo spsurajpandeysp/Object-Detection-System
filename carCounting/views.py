@@ -84,7 +84,7 @@ class VideoStream:
 def CarCounting(request):
     cap_path = os.path.join(os.path.dirname(__file__), "cars.mp4")
     cap = cv2.VideoCapture(cap_path)
-    model = YOLO("../YOLO/yolov8l.pt")
+    model = YOLO("yolov8l.pt")
 
     video_stream = VideoStream(cap, model)
 

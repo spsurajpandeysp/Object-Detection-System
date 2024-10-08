@@ -69,7 +69,7 @@ def ObjectDetection(request):
     cap.set(3, 1080)
     cap.set(4, 720)
 
-    model = YOLO("../YOLO/yolov8l.pt")
+    model = YOLO("yolov8l.pt")
 
     video_stream = VideoStream(cap, model)
 
